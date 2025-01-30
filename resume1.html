@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Mishra | AI & Data Science Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .theme-transition * {
+            transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                        color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.3s ease;
+        }
+
+        .gradient-text {
+            background: linear-gradient(-45deg, #10b981, #3b82f6, #8b5cf6);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradient 8s ease infinite;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans theme-transition">
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="fixed top-4 right-4 z-50 p-3 rounded-full bg-slate-800/50 hover:bg-slate-700/50 backdrop-blur-sm hover:scale-110 transition-transform">
+        <i class="fas fa-moon text-emerald-400"></i>
+    </button>
+
+    <!-- Background Selector -->
+    <button id="bgToggle" class="fixed top-16 right-4 z-50 p-3 rounded-full bg-slate-800/50 hover:bg-slate-700/50 backdrop-blur-sm hover:scale-110 transition-transform">
+        <i class="fas fa-image text-emerald-400"></i>
+    </button>
+
+    <!-- Header Section -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden parallax transition-all duration-1000" id="headerBg" style="background-image: url('fix\ back.jpg');">
+        <!-- Animated Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-emerald-400/10 mix-blend-multiply"></div>
+        
+        <!-- Content -->
+        <div class="container mx-auto px-4 text-center relative z-10" data-aos="zoom-in" data-aos-duration="800">
+            <!-- Profile Image -->
+            <div class="animate-float inline-block hover:animate-none hover:scale-105 transition-transform">
+                <div class="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 border-4 border-emerald-400 shadow-2xl hover:shadow-emerald-400/30 transform-gpu">
+                    <img src="profile photo.jpg" alt="Abhay Mishra" class="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-300">
+                </div>
+            <!-- </div> -->
+        
+        </div>
+
+        <div class="text-center">
+            <h4 class="gradient-text text-lg mb-2 font-semibold uppercase tracking-wide">Artificial Intelligence & Data Science</h4>
+            <h1 class="text-6xl font-extrabold text-slate-100 mb-6" data-aos="fade-up" data-aos-delay="200">Abhay Mishra</h1>
+            <p class="text-xl max-w-2xl mx-auto text-slate-300 leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+                Driven by a passion for leveraging machine learning and AI to transform complex data into actionable, impactful insights.
+            </p>
+        </div>>
+    </div>
+    </div>
+            
+            
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 space-y-20 pb-20">
+        <!-- Education Section -->
+        <section data-aos="fade-right" data-aos-duration="600">
+            <h2 class="text-3xl font-bold text-slate-100 mb-8 pl-4 relative">
+                <span class="absolute left-0 bottom-0 h-8 w-1 bg-emerald-400 animate-pulse"></span>
+                Education
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-slate-800 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1.5 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-emerald-400/10 rounded-lg flex items-center justify-center group-hover:bg-emerald-400/20 transition-colors">
+                            <i class="fas fa-graduation-cap text-emerald-400 group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-100">MET Institute of Engineering</h3>
+                            <p class="text-slate-400">2022 - 2026</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-400">
+                        B.E. in Artificial Intelligence & Data Science<br>
+                        CGPA: 8.1
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section data-aos="fade-left" data-aos-duration="600">
+            <h2 class="text-3xl font-bold text-slate-100 mb-8 pl-4 relative">
+                <span class="absolute left-0 bottom-0 h-8 w-1 bg-emerald-400 animate-pulse"></span>
+                Technical Expertise
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Programming -->
+                <div class="bg-slate-800 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1.5 group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-emerald-400/10 rounded-md flex items-center justify-center group-hover:bg-emerald-400/20 transition-colors">
+                            <i class="fas fa-code text-emerald-400 text-sm group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h3 class="font-semibold text-slate-100">Programming</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">Python</span>
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">C/C++</span>
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="bg-slate-800 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1.5 group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-emerald-400/10 rounded-md flex items-center justify-center group-hover:bg-emerald-400/20 transition-colors">
+                            <i class="fas fa-chart-line text-emerald-400 text-sm group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h3 class="font-semibold text-slate-100">Data Science</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">Pandas/Numpy</span>
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">Matplotlib</span>
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-slate-800 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1.5 group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-emerald-400/10 rounded-md flex items-center justify-center group-hover:bg-emerald-400/20 transition-colors">
+                            <i class="fas fa-tools text-emerald-400 text-sm group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h3 class="font-semibold text-slate-100">Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">VS Code</span>
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">Git/GitHub</span>
+                        <span class="px-3 py-1 bg-emerald-400/10 text-emerald-400 rounded-full text-sm hover:bg-emerald-400/20 hover:scale-105 transition-transform">RapidMiner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section data-aos="fade-up" data-aos-duration="600">
+            <h2 class="text-3xl font-bold text-slate-100 mb-8 pl-4 relative">
+                <span class="absolute left-0 bottom-0 h-8 w-1 bg-emerald-400 animate-pulse"></span>
+                Professional Experience
+            </h2>
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="relative pl-8 border-l-2 border-emerald-400/20">
+                    <div class="absolute w-4 h-4 bg-emerald-400 rounded-full -left-[9px] top-0 animate-ping"></div>
+                    <div class="absolute w-4 h-4 bg-emerald-400 rounded-full -left-[9px] top-0"></div>
+                    <div class="bg-slate-800 p-6 rounded-xl shadow-xl">
+                        <h3 class="text-xl font-semibold text-slate-100">Data Science Trainee - Altair</h3>
+                        <p class="text-emerald-400 text-sm mb-2">2024</p>
+                        <ul class="list-disc pl-5 space-y-2 text-slate-400">
+                            <li>Worked with RapidMiner AI Studio for data engineering pipelines</li>
+                            <li>Implemented machine learning models for real-world datasets</li>
+                            <li>Earned certification in Data Science & ML Basics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="relative pl-8 border-l-2 border-emerald-400/20">
+                    <div class="absolute w-4 h-4 bg-emerald-400 rounded-full -left-[9px] top-0 animate-ping"></div>
+                    <div class="absolute w-4 h-4 bg-emerald-400 rounded-full -left-[9px] top-0"></div>
+                    <div class="bg-slate-800 p-6 rounded-xl shadow-xl">
+                        <h3 class="text-xl font-semibold text-slate-100">Python Developer Intern - Oasis Infobyte</h3>
+                        <p class="text-emerald-400 text-sm mb-2">Aug 2024 - Sep 2024</p>
+                        <ul class="list-disc pl-5 space-y-2 text-slate-400">
+                            <li>Developed Python-based applications in remote team environment</li>
+                            <li>Enhanced problem-solving skills through practical coding challenges</li>
+                            <li>Collaborated on software development lifecycle processes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-800 py-6 text-center">
+        <p class="text-slate-400">&copy; 2024 Abhay Mishra. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Enhanced AOS Configuration
+        AOS.init({
+            duration: 600,
+            once: true,
+            easing: 'ease-out-quart',
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+            offset: 120
+        });
+
+        // Theme Toggle with Ripple Effect
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        themeToggle.addEventListener('click', function(e) {
+            // Add ripple effect
+            const ripple = document.createElement('div');
+            ripple.className = 'absolute w-8 h-8 bg-emerald-400/20 rounded-full animate-ripple';
+            ripple.style.left = e.offsetX - 14 + 'px';
+            ripple.style.top = e.offsetY - 14 + 'px';
+            this.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 600);
+
+            // Toggle dark/light theme
+            body.classList.toggle('bg-slate-900');
+            body.classList.toggle('text-slate-300');
+            body.classList.toggle('bg-white');
+            body.classList.toggle('text-slate-900');
+        });
+
+        // Background Transition with Fade Effect
+        const backgrounds = ['url("header-bg.jpg")', 'url("background2.jpg")', 'url("background3.jpg")'];
+        let currentBg = 0;
+        const headerBg = document.getElementById('headerBg');
+        
+        document.getElementById('bgToggle').addEventListener('click', () => {
+            headerBg.style.opacity = 0;
+            setTimeout(() => {
+                currentBg = (currentBg + 1) % backgrounds.length;
+                headerBg.style.backgroundImage = backgrounds[currentBg];
+                headerBg.style.opacity = 1;
+            }, 300);
+        });
+
+        // Scroll Progress Indicator
+        window.addEventListener('scroll', () => {
+            const scrollPercentage = 
+                (document.documentElement.scrollTop + document.body.scrollTop) / 
+                (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            
+            document.documentElement.style.setProperty('--scroll', scrollPercentage);
+        });
+    </script>
+</body>
+</html>
